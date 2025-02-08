@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "LexingtonGothic";
+    src: local('LexingtonGothic'), url("fonts/lexington-gothic/lexington-gothic.ttf") format('truetype');
+}
+
+* {
+    font-family: "LexingtonGothic";
+    background-color: #E3E1C9;
+}
+
+a:hover {
+    color: #485B63;
+}
+
+button:hover {
+    color: #485B63;
+}
+
+
