@@ -4,7 +4,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="text-black px-8 md:px-16 lg:px24">
+    <nav className="px-8 md:px-16 lg:px24">
       <div
         className="container-fluid py-2 flex justify-center md:justify-between items-center text-3xl"
         style={{ fontFamily: "LexingtonGothic" }}
@@ -36,7 +36,6 @@ const Navbar = () => {
           <a href="#projects" style={{ cursor: "pointer" }}>
             Projects
           </a>
-          {/*<a className=></a>*/}
         </div>
         <button style={{ cursor: "pointer" }}>Contact Me</button>
       </div>

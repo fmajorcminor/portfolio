@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className="text-center">
-      <footer>Test</footer>
+      <footer>Here is where attribution can go</footer>
     </div>
   );
 };

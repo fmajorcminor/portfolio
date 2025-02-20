@@ -1,4 +1,4 @@
-import HeroImage from "../assets/SunBackground.jpeg";
+import HeroImage from "../assets/pixel-portrait.jpeg";
 import Resume from "../assets/DallinChristensen-Resume.pdf";
 
 const Hero = () => {
@@ -11,7 +11,7 @@ const Hero = () => {
       <img
         src={HeroImage}
         alt=""
-        className="mx-auto size-50 mb-8 object-cover transform transition-transform duration-300 hover:scale-105 "
+        className="mx-auto size-50 mb-8 object-cover transform transition-transform duration-300 hover:scale-105 rounded-full"
       ></img>
       <h1 className="text-5xl font-bold">
         Hi, welcome to my page. I&#39;m Dallin
