@@ -1,4 +1,4 @@
-import HeroImage from "../assets/pixel-portrait.jpeg";
+import HeroImage from "../assets/pixel-portrait.png";
 import Resume from "../assets/DallinChristensen-Resume.pdf";
 
 const Hero = () => {
