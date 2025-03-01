@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 @font-face {
     font-family: "LexingtonGothic";
     src: local('LexingtonGothic'), url("fonts/lexington-gothic/lexington-gothic.ttf") format('truetype');

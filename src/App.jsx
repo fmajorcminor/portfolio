@@ -10,7 +10,7 @@ import Projects from "./components/Projects.jsx";
 
 function App() {
   return (
-    <div className="flex flex-col h-screen" style={{ color: "#485B63" }}>
+    <div className="flex flex-col h-screen text-[#485B63] bg-[#E3E1C9]">
       <Navbar />
       <Hero />
       <About />
