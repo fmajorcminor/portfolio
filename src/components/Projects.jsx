@@ -2,6 +2,7 @@ import TSP_GIF from "../assets/TSP_GIF.gif";
 import PiTest_GIF from "../assets/PiTest_GIF.gif";
 import Capstone from "../assets/Master's Capstone AR Experience.pdf";
 import Vespa from "../assets/Vespa.jpg";
+import FamilyMap from "../assets/FamilyMap.gif";
 
 const Projects = () => {
   return (
@@ -27,7 +28,7 @@ const Projects = () => {
           <img src={PiTest_GIF} alt="loading..." className="border-1 my-12" />
         </div>
         <div className="container mx-auto px-5 pb-4 pt-2 font-bold md:w-[calc(50%-0.5rem)] border text-left">
-          Traveling Salesperson Problem
+          <h1>Traveling Salesperson Problem</h1>
           <p className="text-2xl font-normal">
             This was a project in one of my university courses. Our task was to
             try to create a less-costly solution to the Traveling Salesperson
@@ -44,11 +45,8 @@ const Projects = () => {
           </p>
           <img src={TSP_GIF} alt="loading..." className="border-1 mt-4" />
         </div>
-        <div className="container mx-auto px-2 pb-4 pt-2 font-bold md:w-[calc(50%-0.5rem)] border text-left">
-          Family Map
-        </div>
         <div className="container mx-auto px-5 pb-4 pt-2 font-bold md:w-[calc(50%-0.5rem)] border text-left">
-          Augmented Reality Master&#39;s Capstone
+          <h1>Augmented Reality Master&#39;s Capstone</h1>
           <p className="text-2xl font-normal">
             During my Master&#39;s degree in Information Systems, I was required
             to do a two-semester long capstone project. My team and I decided to
@@ -70,6 +68,22 @@ const Projects = () => {
             src={Vespa}
             alt="loading..."
             className="border-1 mt-4 mx-auto object-fill"
+          />
+        </div>
+        <div className="container mx-auto px-5 pb-4 pt-2 font-bold md:w-[calc(50%-0.5rem)] border text-left">
+          <h1>Family Map</h1>
+          <p className="text-2xl font-normal">
+            This is an Android application that utilizes the Google Maps API to
+            display faux family history data. This project was done during my
+            undergraduate in one of my computer science courses. There is a
+            backend server written in Java that the Android app communicates
+            with via REST APIs as well as a SQLite DB that contains login, user,
+            and family history event data.
+          </p>
+          <img
+            src={FamilyMap}
+            alt="loading..."
+            className="border-1 mx-auto mt-4 max-w-3xs object-contain"
           />
         </div>
       </div>
