@@ -10,7 +10,7 @@ const Hero = () => {
     <div className="text-2xl text-center py-16" style={{ color: "#485B63" }}>
       {/*<h1 className="text-5xl font-bold mb-4">Hi, welcome to my page!</h1>*/}
       <div className="container-fluid flex flex-col px-8 md:flex-row px-13 items-center justify-between">
-        <div className="container flex justify-normal space-x-5">
+        <div className="container flex justify-center space-x-5">
           <img
             src={HeroImage}
             alt=""
