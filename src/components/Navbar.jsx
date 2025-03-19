@@ -4,18 +4,20 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="px-8 md:px-16 lg:px24">
+    <nav className="px-8 md:px-13 lg:px24">
       <div
         className="container-fluid py-2 flex justify-center md:justify-between items-center text-3xl"
         style={{ fontFamily: "LexingtonGothic" }}
       >
-        <div className="font-bold text-5xl hidden md:inline">Dallin</div>
-        <div className="space-x-6">
-          <a href="#home" style={{ cursor: "pointer" }}>
-            Home
-          </a>
+        <div className="font-bold text-5xl hidden md:inline">
+          Dallin Christensen
+        </div>
+        <div className="space-x-5">
           <a href="#about" style={{ cursor: "pointer" }}>
             About
+          </a>
+          <a href="#projects" style={{ cursor: "pointer" }}>
+            Projects
           </a>
           <button
             onClick={() => handleButtonClick("https://github.com/fmajorcminor")}
@@ -33,11 +35,8 @@ const Navbar = () => {
           >
             LinkedIn
           </button>
-          <a href="#projects" style={{ cursor: "pointer" }}>
-            Projects
-          </a>
+          <button style={{ cursor: "pointer" }}>Contact Me</button>
         </div>
-        <button style={{ cursor: "pointer" }}>Contact Me</button>
       </div>
     </nav>
   );

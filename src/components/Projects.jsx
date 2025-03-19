@@ -12,8 +12,10 @@ const Projects = () => {
       style={{ color: "#485B63" }}
     >
       {" "}
-      <h1 className="text-5xl pb-4 font-bold">Projects</h1>
-      <div className="flex flex-col md:flex-row gap-4 flex-wrap px-4 text-3xl">
+      <h1 className="text-6xl pb-8 font-bold container text-left px-13">
+        Projects
+      </h1>
+      <div className="flex flex-col md:flex-row gap-4 flex-wrap px-13 text-3xl">
         <div className="container mx-auto px-5 pb-4 pt-2 font-bold md:w-[calc(50%-0.5rem)] border text-left">
           <h1> Pi Cheater</h1>
           <p className="text-2xl font-normal">
@@ -46,7 +48,7 @@ const Projects = () => {
           <img src={TSP_GIF} alt="loading..." className="border-1 mt-4" />
         </div>
         <div className="container mx-auto px-5 pb-4 pt-2 font-bold md:w-[calc(50%-0.5rem)] border text-left">
-          <h1>Augmented Reality Master&#39;s Capstone</h1>
+          <h1>Augmented Reality Master&#39;s Degree Capstone</h1>
           <p className="text-2xl font-normal">
             During my Master&#39;s degree in Information Systems, I was required
             to do a two-semester long capstone project. My team and I decided to
