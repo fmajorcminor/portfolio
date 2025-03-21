@@ -1,3 +1,5 @@
+import Resume from "../assets/DallinChristensen-Resume.pdf";
+
 const Navbar = () => {
   const handleButtonClick = (link) => {
     window.open(link, "_self");
@@ -13,12 +15,14 @@ const Navbar = () => {
           Dallin Christensen
         </div>
         <div className="space-x-5">
-          <a href="#about" style={{ cursor: "pointer" }}>
-            About
-          </a>
-          <a href="#projects" style={{ cursor: "pointer" }}>
-            Projects
-          </a>
+          <button
+            onClick={() => {
+              window.open(Resume, "_blank");
+            }}
+            style={{ cursor: "pointer" }}
+          >
+            Resume
+          </button>
           <button
             onClick={() => handleButtonClick("https://github.com/fmajorcminor")}
             style={{ cursor: "pointer" }}
@@ -35,7 +39,7 @@ const Navbar = () => {
           >
             LinkedIn
           </button>
-          <button style={{ cursor: "pointer" }}>Contact Me</button>
+          {/*<button style={{ cursor: "pointer" }}>Contact Me</button>*/}
         </div>
       </div>
     </nav>

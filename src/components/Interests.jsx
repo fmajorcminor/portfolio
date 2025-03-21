@@ -1,8 +1,8 @@
 const Interests = () => {
-  const spotifyEmbedWindow = document.querySelector(
-    'iframe[src*="spotify.com/embed"]',
-  ).contentWindow;
-  spotifyEmbedWindow.postMessage({ command: "toggle" }, "*");
+  // const spotifyEmbedWindow = document.querySelector(
+  //   'iframe[src*="spotify.com/embed"]',
+  // ).contentWindow;
+  // spotifyEmbedWindow.postMessage({ command: "toggle" }, "*");
 
   return (
     <div>

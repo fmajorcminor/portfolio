@@ -5,6 +5,7 @@ import About from "./components/About.jsx";
 import Footer from "./components/Footer.jsx";
 import Contact from "./components/Contact.jsx";
 import Projects from "./components/Projects.jsx";
+// import Interests from "./components/Interests.jsx";
 
 // import Interests from "./components/Interests.jsx";
 
