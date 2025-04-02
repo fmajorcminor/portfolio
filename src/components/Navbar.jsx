@@ -6,7 +6,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="px-8 md:px-13 lg:px24">
+    <nav className="px-8 md:px-8 lg:px24">
       <div
         className="container-fluid py-2 flex justify-center md:justify-between items-center text-3xl"
         style={{ fontFamily: "LexingtonGothic" }}

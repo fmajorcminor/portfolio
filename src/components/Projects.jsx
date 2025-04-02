@@ -12,10 +12,10 @@ const Projects = () => {
       style={{ color: "#485B63" }}
     >
       {" "}
-      <h1 className="text-6xl pb-8 font-bold container text-left px-13">
+      <h1 className="text-6xl pb-8 font-bold container text-left px-8">
         Projects
       </h1>
-      <div className="flex flex-col md:flex-row gap-4 flex-wrap px-13 text-3xl">
+      <div className="flex flex-col md:flex-row gap-4 flex-wrap px-8 text-3xl">
         <div className="container mx-auto px-5 pb-4 pt-2 font-bold md:w-[calc(50%-0.5rem)] border text-left">
           <h1> Pi Cheater</h1>
           <p className="text-2xl font-normal">

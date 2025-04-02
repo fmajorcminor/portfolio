@@ -16,7 +16,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <p className="text-3xl p-2 h-fit text-left">
+        <p className="text-3xl py-2 h-fit text-left">
           I&#39;m currently a software engineer at Goldman Sachs with a
           Master&#39;s degree in information systems. During my graduate
           studies, I focused on cybersecurity, which is something I always try
