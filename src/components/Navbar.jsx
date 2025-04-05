@@ -19,13 +19,23 @@ const Navbar = () => {
             onClick={() => {
               window.open(Resume, "_blank");
             }}
-            style={{ cursor: "pointer" }}
+            style={{
+              cursor: "pointer",
+              fontSize: "30px",
+              fontFamily: "LexingtonGothic",
+              backgroundColor: "lightgray",
+            }}
           >
             Resume
           </button>
           <button
             onClick={() => handleButtonClick("https://github.com/fmajorcminor")}
-            style={{ cursor: "pointer" }}
+            style={{
+              cursor: "pointer",
+              fontSize: "30px",
+              fontFamily: "LexingtonGothic",
+              backgroundColor: "lightgray",
+            }}
           >
             GitHub
           </button>
@@ -35,7 +45,12 @@ const Navbar = () => {
                 "https://www.linkedin.com/in/dallin-christensen-a37903aa/",
               )
             }
-            style={{ cursor: "pointer" }}
+            style={{
+              cursor: "pointer",
+              fontSize: "30px",
+              fontFamily: "LexingtonGothic",
+              backgroundColor: "lightgray",
+            }}
           >
             LinkedIn
           </button>
