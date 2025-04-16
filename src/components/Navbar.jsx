@@ -54,7 +54,6 @@ const Navbar = () => {
           >
             LinkedIn
           </button>
-          {/*<button style={{ cursor: "pointer" }}>Contact Me</button>*/}
         </div>
       </div>
     </nav>

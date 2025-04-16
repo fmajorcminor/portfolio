@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="text-center text-5xl"
+      className="text-center text-5xl pb-6"
       style={{ color: "#485B63" }}
     >
       {" "}
