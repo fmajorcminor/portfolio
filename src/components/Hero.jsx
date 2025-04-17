@@ -6,7 +6,7 @@ const Hero = () => {
       className="text-2xl text-center pt-16 pb-12"
       style={{ color: "#485B63" }}
     >
-      <div className="container-fluid flex flex-col px-4 md:flex-row items-center justify-between">
+      <div className="container-fluid flex flex-col px-8 md:flex-row items-center justify-between">
         <div className="container flex flex-row justify-center space-x-5">
           <img
             src={HeroImage}
@@ -20,9 +20,7 @@ const Hero = () => {
         </div>
 
         <div>
-          <h2 className="hidden text-5xl md:inline text-left">
-            Who am I, you ask?
-          </h2>
+          <h2 className="text-5xl text-left underline">About Me</h2>
           <p className="text-3xl py-2 h-fit text-left">
             I&#39;m a software engineer at Goldman Sachs with a Master&#39;s
             degree in information systems. During my graduate studies, I focused
@@ -32,7 +30,7 @@ const Hero = () => {
             to be a force for good and make a positive impact in the people I
             interact with. Take a look at some of the projects I&#39;ve done!
           </p>
-          <h2 className="hidden text-3xl md:inline text-left underline">
+          <h2 className="text-3xl text-left underline">
             Tech I Use Most Often
           </h2>
           <ul className="flex flex-wrap gap-x-6 list-none p-0 m-0 text-3xl">
