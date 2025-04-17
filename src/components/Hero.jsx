@@ -22,13 +22,12 @@ const Hero = () => {
         <div>
           <h2 className="text-5xl text-left underline">About Me</h2>
           <p className="text-3xl py-2 h-fit text-left">
-            I&#39;m a software engineer at Goldman Sachs with a Master&#39;s
-            degree in information systems. During my graduate studies, I focused
-            on cybersecurity, which is something I always try to keep in mind
-            when developing. I absolutely love the French language, which is
-            what I got my Bachelor&#39;s degree in, and my main career goal is
-            to be a force for good and make a positive impact in the people I
-            interact with. Take a look at some of the projects I&#39;ve done!
+            I&#39;m currently a software engineer at Goldman Sachs with a
+            Master&#39;s degree in information systems. My emphasis was in
+            Cybersecurity which is something I always try to keep in mind when
+            developing. I love the French language, listening to music, and
+            I&#39;ve recently gotten into photograpy! Take a look at some of the
+            projects I&#39;ve done!
           </p>
           <h2 className="text-3xl text-left underline">
             Tech I Use Most Often
