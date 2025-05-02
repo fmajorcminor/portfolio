@@ -26,7 +26,7 @@ const Hero = () => {
             Master&#39;s degree in information systems. My emphasis was in
             Cybersecurity which is something I always try to keep in mind when
             developing. I love the French language, listening to music, and
-            I&#39;ve recently gotten into photograpy! Take a look at some of the
+            I&#39;ve recently gotten into photograpy. Take a look at some of the
             projects I&#39;ve done!
           </p>
           <h2 className="text-3xl text-left underline">
@@ -42,6 +42,7 @@ const Hero = () => {
             <li>Python</li>
             <li>SQL</li>
             <li>Kafka</li>
+            <li>Flink</li>
             <li>React</li>
           </ul>
         </div>
