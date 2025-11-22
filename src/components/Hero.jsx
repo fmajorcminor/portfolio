@@ -22,12 +22,12 @@ const Hero = () => {
         <div>
           <h2 className="text-5xl text-left underline">About Me</h2>
           <p className="text-3xl py-2 h-fit text-left">
-            I&#39;m currently a software engineer at Goldman Sachs with a
+            I&#39;m currently a senior software engineer at Domo and I have a
             Master&#39;s degree in information systems. My emphasis was in
             Cybersecurity which is something I always try to keep in mind when
             developing. I love the French language, listening to music, and
-            I&#39;ve recently gotten into photograpy. Take a look at some of the
-            projects I&#39;ve done!
+            I&#39;ve recently gotten into photography. Take a look at some of
+            the projects I&#39;ve done!
           </p>
           <h2 className="text-3xl text-left underline">
             Tech I Use Most Often
@@ -37,13 +37,11 @@ const Hero = () => {
             <li>Spring Boot</li>
             <li>Docker</li>
             <li>Kubernetes</li>
-            <li>MongoDB</li>
             <li>Git</li>
             <li>Python</li>
             <li>SQL</li>
+            <li>Claude Code</li>
             <li>Kafka</li>
-            <li>Flink</li>
-            <li>React</li>
           </ul>
         </div>
       </div>
