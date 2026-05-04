@@ -1,0 +1,183 @@
+/* =============================================
+   Blog styles — adapt these to match your site
+   ============================================= */
+
+.blog-index,
+.blog-post {
+  max-width: 720px;
+  margin: 0 48px; /* Much less margin */
+  padding: 2rem 0;
+  font-size: 2rem; /* Larger font for your small font-family */
+  font-family: "LexingtonGothic", Arial, sans-serif;
+  text-align: left;
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  .blog-index,
+  .blog-post {
+    margin: 0 4px;
+    font-size: 1.5rem;
+  }
+}
+
+/* ---- Post list ---- */
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.post-card {
+  border-bottom: 1px solid #040404;
+  padding-bottom: 2rem;
+  text-align: left;
+  /* height: 25%; */
+}
+
+.post-card h2 {
+  margin: 0 0 0.25rem;
+  font-size: 2.5rem;
+  font-family: "LexingtonGothic", Arial, sans-serif;
+  text-align: left;
+  height: 2.5rem;
+}
+
+.post-card h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-card h2 a:hover {
+  text-decoration: underline;
+}
+
+.post-card time {
+  color: #888;
+  font-size: 1.4rem;
+}
+
+.post-card p {
+  margin: 0.5rem 0 0;
+  color: #555;
+  font-size: 2rem;
+  font-family: "LexingtonGothic", Arial, sans-serif;
+}
+
+/* ---- Tags ---- */
+.tag-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  font-size: 1.3rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  background: #f0f0f0;
+  color: #555;
+}
+
+/* ---- Single post ---- */
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  font-family: "LexingtonGothic", Arial, sans-serif;
+  color: #888;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: inherit;
+}
+
+.blog-post article header {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+.blog-post article header h1 {
+  margin: 0 0 0.25rem;
+  font-size: 2.5rem;
+  font-family: "LexingtonGothic", Arial, sans-serif;
+  text-align: left;
+}
+
+.blog-post article header time {
+  font-size: 1rem;
+  color: #888;
+}
+
+/* ---- Post body typography ---- */
+.post-body {
+  line-height: 1.85;
+  color: #333;
+  font-size: 2rem;
+  font-family: "LexingtonGothic", Arial, sans-serif;
+  text-align: left;
+}
+
+.post-body h2,
+.post-body h3,
+.post-body h4 {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.post-body p {
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-family: "LexingtonGothic", Arial, sans-serif;
+}
+
+.post-body code {
+  font-family: "Fira Code", "Cascadia Code", monospace;
+  font-size: 1em;
+  background: #f5f5f5;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+}
+
+.post-body pre {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.post-body pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+
+.post-body blockquote {
+  border-left: 3px solid #ccc;
+  margin: 1.5rem 0;
+  padding: 0.25rem 1rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.post-body img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.blog-loading {
+  padding: 2rem;
+  color: #888;
+  font-size: 1.2rem;
+  text-align: left;
+}
