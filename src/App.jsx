@@ -5,9 +5,9 @@ import About from "./components/About.jsx";
 import Footer from "./components/Footer.jsx";
 import Projects from "./components/Projects.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import BlogIndex from "../../../WebstormProjects/portfolio/src/pages/BlogIndex";
-import BlogPost from "../../../WebstormProjects/portfolio/src/pages/BlogPost";
-import "../../../WebstormProjects/portfolio/src/pages/blog.css";
+import BlogIndex from "./pages/BlogIndex.jsx";
+import BlogPost from "./pages/BlogPost.jsx";
+import "./pages/blog.css";
 
 function Home() {
     return (
