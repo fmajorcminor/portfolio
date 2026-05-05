@@ -6,18 +6,12 @@
         <title>Blog Admin</title>
     </head>
     <body>
-        <!-- Decap CMS loads itself into this page -->
         <script>
             (function () {
                 var bc = new BroadcastChannel("decap-auth");
                 bc.onmessage = function (e) {
                     bc.close();
-                    window.dispatchEvent(
-                        new MessageEvent("message", {
-                            data: e.data,
-                            origin: window.location.origin,
-                        }),
-                    );
+                    window.postMessage(e.data, window.location.origin);
                 };
             })();
         </script>

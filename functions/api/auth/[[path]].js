@@ -1,12 +1,7 @@
-// functions/api/auth/[[path]].js
-// Cloudflare Pages Function — handles GitHub OAuth for Decap CMS
-// Place this file at: functions/api/auth/[[path]].js in your repo root
-
 export async function onRequest(context) {
     const { request, env } = context;
     const url = new URL(request.url);
 
-    // Step 1: Redirect user to GitHub to authorize
     if (url.pathname === "/api/auth") {
         const params = new URLSearchParams({
             client_id: env.GITHUB_CLIENT_ID,
@@ -19,7 +14,6 @@ export async function onRequest(context) {
         );
     }
 
-    // Step 2: Exchange the code GitHub sends back for an access token
     if (url.pathname === "/api/auth/callback") {
         const code = url.searchParams.get("code");
 
@@ -40,32 +34,36 @@ export async function onRequest(context) {
         );
 
         const tokenData = await tokenRes.json();
-        const accessToken = tokenData.access_token;
 
-        // Double-stringify so the token is safely embedded in the inline script
-        // as a JS string literal, avoiding any quote/escape conflicts
-        const payload = JSON.stringify(
-            JSON.stringify({ token: accessToken, provider: "github" }),
-        );
+        if (tokenData.error) {
+            const errContent = JSON.stringify(tokenData);
+            return new Response(
+                `<!DOCTYPE html><html><body><script>window.opener.postMessage('authorization:github:error:${errContent}','*');<\/script></body></html>`,
+                { headers: { "Content-Type": "text/html" }, status: 401 },
+            );
+        }
+
+        const content = JSON.stringify({
+            token: tokenData.access_token,
+            provider: "github",
+        });
 
         const html = `<!DOCTYPE html>
-<html>
-<body>
-<script>
-  (function() {
-    var payload = ${payload};
-    var message = "authorization:github:success:" + payload;
-    var bc = new BroadcastChannel("decap-auth");
-    bc.postMessage(message);
-    bc.close();
-    if (window.opener) {
-      window.opener.postMessage(message, "*");
-    }
-    window.close();
-  })();
-</script>
-</body>
-</html>`;
+ <html>
+ <body>
+ <script>
+ const receiveMessage = (message) => {
+ window.opener.postMessage(
+ 'authorization:github:success:${content}',
+ message.origin
+ );
+ window.removeEventListener('message', receiveMessage, false);
+ };
+ window.addEventListener('message', receiveMessage, false);
+ window.opener.postMessage('authorizing:github', '*');
+ <\/script>
+ </body>
+ </html>`;
 
         return new Response(html, {
             headers: { "Content-Type": "text/html" },
