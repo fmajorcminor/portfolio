@@ -55,6 +55,9 @@ export async function onRequest(context) {
   (function() {
     var payload = ${payload};
     var message = "authorization:github:success:" + payload;
+    var bc = new BroadcastChannel("decap-auth");
+    bc.postMessage(message);
+    bc.close();
     if (window.opener) {
       window.opener.postMessage(message, "*");
     }

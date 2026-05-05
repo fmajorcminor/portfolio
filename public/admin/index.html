@@ -7,6 +7,20 @@
     </head>
     <body>
         <!-- Decap CMS loads itself into this page -->
+        <script>
+            (function () {
+                var bc = new BroadcastChannel("decap-auth");
+                bc.onmessage = function (e) {
+                    bc.close();
+                    window.dispatchEvent(
+                        new MessageEvent("message", {
+                            data: e.data,
+                            origin: window.location.origin,
+                        }),
+                    );
+                };
+            })();
+        </script>
         <script src="https://unpkg.com/decap-cms@3.3.3/dist/decap-cms.js"></script>
     </body>
 </html>
