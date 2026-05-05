@@ -44,6 +44,7 @@ export default function BlogPost() {
                         </ul>
                     )}
                 </header>
+                <div className="border-b"></div>
 
                 <div className="post-body">
                     <ReactMarkdown>{post.content}</ReactMarkdown>

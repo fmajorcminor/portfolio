@@ -24,13 +24,11 @@ export default function BlogIndex() {
                     fontSize: "30px",
                     fontFamily: "LexingtonGothic",
                     backgroundColor: "lightgray",
-                    height: 36,
-                    padding: 12,
                 }}
             >
                 Home
             </button>
-            <h1>Blog</h1>
+            <h1 className="mt-4">Blog Name</h1>
 
             {posts.length === 0 && <p>No posts yet — check back soon.</p>}
 

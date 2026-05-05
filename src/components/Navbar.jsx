@@ -14,7 +14,7 @@ const Navbar = () => {
                 <div className="font-bold text-5xl hidden md:inline">
                     Dallin Christensen
                 </div>
-                <div className="space-x-5">
+                <div className="grid grid-cols-2 gap-x-16 gap-y-4 sm:flex sm:space-x-5 sm:gap-2">
                     <button
                         onClick={() => {
                             window.open(Resume, "_blank");

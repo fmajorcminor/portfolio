@@ -10,7 +10,7 @@
   font-size: 2rem; /* Larger font for your small font-family */
   font-family: "LexingtonGothic", Arial, sans-serif;
   text-align: left;
-  line-height: 1.8;
+  line-height: 1.2;
 }
 
 @media (max-width: 600px) {
@@ -78,7 +78,7 @@
 }
 
 .tag {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding: 0.2rem 0.6rem;
   border-radius: 9999px;
   background: #f0f0f0;
@@ -89,7 +89,7 @@
 .back-link {
   display: inline-block;
   margin-bottom: 1.5rem;
-  font-size: 1.3rem;
+  font-size: 1.9rem;
   font-family: "LexingtonGothic", Arial, sans-serif;
   color: #888;
   text-decoration: none;
@@ -108,13 +108,13 @@
 
 .blog-post article header h1 {
   margin: 0 0 0.25rem;
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-family: "LexingtonGothic", Arial, sans-serif;
   text-align: left;
 }
 
 .blog-post article header time {
-  font-size: 1rem;
+  font-size: 1.6rem;
   color: #888;
 }
 
