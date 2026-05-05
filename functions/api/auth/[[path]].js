@@ -39,16 +39,30 @@ export async function onRequest(context) {
             },
         );
 
-        const { access_token } = await tokenRes.json();
+        const tokenData = await tokenRes.json();
+        const accessToken = tokenData.access_token;
 
-        // Decap CMS listens for this postMessage in the OAuth popup
-        const html = `<!DOCTYPE html><html><body><script>
-      window.opener.postMessage(
-        'authorization:github:success:${JSON.stringify({ token: access_token, provider: "github" })}',
-        '*'
-      );
-      window.close();
-    </script></body></html>`;
+        // Double-stringify so the token is safely embedded in the inline script
+        // as a JS string literal, avoiding any quote/escape conflicts
+        const payload = JSON.stringify(
+            JSON.stringify({ token: accessToken, provider: "github" }),
+        );
+
+        const html = `<!DOCTYPE html>
+<html>
+<body>
+<script>
+  (function() {
+    var payload = ${payload};
+    var message = "authorization:github:success:" + payload;
+    if (window.opener) {
+      window.opener.postMessage(message, "*");
+    }
+    window.close();
+  })();
+</script>
+</body>
+</html>`;
 
         return new Response(html, {
             headers: { "Content-Type": "text/html" },
