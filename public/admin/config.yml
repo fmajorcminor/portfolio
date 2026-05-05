@@ -4,6 +4,7 @@ backend:
     branch: main
     # Cloudflare Pages handles the OAuth callback
     base_url: https://dallin-christensen.com # your Cloudflare Pages URL
+    auth_endpoint: api/auth
 
 media_folder: public/images/blog
 public_folder: /images/blog
