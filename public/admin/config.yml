@@ -3,7 +3,7 @@ backend:
     repo: fmajorcminor/portfolio # e.g. dallin-christensen/portfolio
     branch: main
     # Cloudflare Pages handles the OAuth callback
-    base_url: https://dallin-christensen.com # your Cloudflare Pages URL
+    base_url: https://portfolio-520.pages.dev # your Cloudflare Pages URL
 
 media_folder: public/images/blog
 public_folder: /images/blog
