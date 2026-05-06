@@ -43,6 +43,30 @@ export async function onRequest(context) {
             );
         }
 
+        // Allowlist for authorized GitHub users
+        const ALLOWED_USERS = ["fmajorcminor"];
+
+        // Fetch the authenticated user's profile to verify they're in the allowlist
+        const userRes = await fetch("https://api.github.com/user", {
+            headers: {
+                Authorization: `Bearer ${tokenData.access_token}`,
+                Accept: "application/vnd.github.v3+json",
+            },
+        });
+
+        const userData = await userRes.json();
+
+        if (!userData.login || !ALLOWED_USERS.includes(userData.login)) {
+            const errContent = JSON.stringify({
+                error: "unauthorized_user",
+                message: `User ${userData.login} is not authorized to access this application`,
+            });
+            return new Response(
+                `<!DOCTYPE html><html><body><script>window.opener.postMessage('authorization:github:error:${errContent}','*');<\/script></body></html>`,
+                { headers: { "Content-Type": "text/html" }, status: 403 },
+            );
+        }
+
         const content = JSON.stringify({
             token: tokenData.access_token,
             provider: "github",
