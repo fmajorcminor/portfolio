@@ -56,7 +56,7 @@ const Navbar = () => {
                     >
                         LinkedIn
                     </button>
-                    <button
+                    {/* <button
                         onClick={() => handleButtonClick("/blog", false)}
                         style={{
                             cursor: "pointer",
@@ -66,7 +66,7 @@ const Navbar = () => {
                         }}
                     >
                         Blog
-                    </button>
+                    </button> */}
                 </div>
             </div>
         </nav>
